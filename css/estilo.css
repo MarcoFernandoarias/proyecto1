@@ -1,0 +1,75 @@
+.contenedor-conversor{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    height: 400px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: navajowhite;
+}
+.contenedor-conversor h2{
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(73, 73, 73);
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor-conversor input[type="number"]{
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 22px;
+}
+.contenedor-conversor select{
+    height: 30px;
+    font-size: 22px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.contenedor-conversor #btn-convertir {
+    height: 30px;
+    background: darkgreen;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contenedor-conversor #btn-convertir:hover {
+    height: 30px;
+    background: orange;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.05) ;
+}
+#resultado{
+    background: darkblue;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 2px;
+}
+@media screen and (max-width:600px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contenedor-conversor{
+        display: grid;
+        width: 100%;
+        margin: 0;
+        height: 500px;
+
+    }
+}
